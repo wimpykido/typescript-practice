@@ -57,9 +57,7 @@ const myMovie: Movie = {
   year: 2020,
   genre: ["fantastic", "sci-fi"],
   rating: 5,
-  getInfo: () => {
-    return myMovie.title + myMovie.director + myMovie.year + myMovie.genre.toString() + myMovie.rating
-  }
+  getInfo: () => myMovie.title + myMovie.director + myMovie.year + myMovie.genre.toString() + myMovie.rating
 }
 
 console.log(myMovie.getInfo())
@@ -116,9 +114,7 @@ const person1: PersonInfo = {
   email: "johndoe@example.com"
 };
 
-const getPersonSummary = (obj: PersonInfo) => {
-  return `Name: ${obj.name}, Age: ${obj.age}${obj.email ? `, Email: ${obj.email}` : ""} `
-}
+const getPersonSummary = (obj: PersonInfo) => `Name: ${obj.name}, Age: ${obj.age}${obj.email ? `, Email: ${obj.email}` : ""} `
 
 console.log(getPersonSummary(person1))
 
